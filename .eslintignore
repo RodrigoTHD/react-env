@@ -1,0 +1,7 @@
+/.git
+/coverage
+/tmp
+/scripts
+/config
+/build
+node_modules
