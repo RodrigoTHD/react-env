@@ -4,7 +4,7 @@ Custom create-react-app environment with test
 
 ## Suggestions for extensions to install on VSCode
 
-### Execute the command `ctrl+p`
+### Execute the command `ctrl+p` and install this
 
     ext install esbenp.prettier-vscode
     ext install editorconfig.editorconfig

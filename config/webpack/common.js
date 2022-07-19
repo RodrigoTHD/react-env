@@ -1,8 +1,11 @@
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { env } = require('../env');
+const { env, stringified } = require('../env');
 const { physicalPaths } = require('../paths');
+
+console.log(stringified);
 
 module.exports = {
   entry: {
@@ -25,6 +28,7 @@ module.exports = {
     compress: true
   },
   plugins: {
+    stringified: () => new webpack.DefinePlugin(stringified),
     compressionPlugin: () => new CompressionPlugin(),
     htmlWebpackPlugin: production =>
       new HtmlWebpackPlugin({

@@ -9,6 +9,7 @@ module.exports = {
     rules: [rules.js_jsx, rules.sass]
   },
   plugins: [
+    plugins.stringified(),
     plugins.compressionPlugin(),
     plugins.htmlWebpackPlugin(),
     plugins.miniCssExtractPlugin()

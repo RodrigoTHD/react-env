@@ -11,6 +11,11 @@ requiredEnvs.forEach(requiredEnv => {
   }
 });
 
+const stringified = {
+  'process.env' : JSON.stringify(parsed)
+}
+
 module.exports = {
-  env: parsed
+  env: parsed,
+  stringified: stringified
 };
